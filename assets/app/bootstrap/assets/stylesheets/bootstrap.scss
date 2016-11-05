@@ -10,6 +10,9 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
+// Custom FONTS
+@import "bootstrap/custom/typography";
+
 // Reset and dependencies
 @import "bootstrap/normalize";
 @import "bootstrap/print";
@@ -56,3 +59,5 @@
 // Utility classes
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
+
+@import "bootstrap/custom/landing_page";

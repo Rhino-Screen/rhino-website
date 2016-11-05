@@ -1,0 +1,84 @@
+/*
+*
+  CUSTOM DESIGN FOR LANDING PAGE
+*
+*/
+
+$primary-color: #FFD479;
+
+body{
+  background: lighten($primary-color, 10%);
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+
+  min-height: 100vh;
+}
+
+.soon{
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+
+  flex-direction: column;
+
+  min-height: inherit;
+
+  &:hover{
+    & h1{
+      transform: rotate(-6deg);
+    }
+    & h2{
+      transform: rotate(3deg);
+
+      &.invisible{
+        transform: rotate(2deg);
+
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 20%;
+
+        margin-left: -12rem;
+      }
+
+    }
+  }
+  
+  @media (min-width: $screen-sm) {
+
+    & h1{
+      font-size: 13rem;
+
+      transform: rotate(3deg);
+
+      transition-duration: 0.4s;
+    }
+
+    & h2{
+      font-size: 4rem;
+
+      transform: rotate(-2deg);
+
+      transition-duration: 0.4s;
+
+      &.invisible{
+
+        color: transparent;
+        visibility: visible;
+
+        border-bottom: $text-color solid 4px;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 100%;
+
+        margin-left: 12rem;
+        margin-top: -2.3rem;
+
+        transform: rotate(-2deg);
+      }
+
+    }
+
+  }
+
+}
